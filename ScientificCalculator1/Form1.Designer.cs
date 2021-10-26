@@ -29,8 +29,7 @@ namespace ScientificCalculator1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -74,16 +73,16 @@ namespace ScientificCalculator1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Mistral", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(912, 59);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox.Font = new System.Drawing.Font("Mistral", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox.Location = new System.Drawing.Point(12, 12);
+            this.textBox.Multiline = true;
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(912, 59);
+            this.textBox.TabIndex = 0;
+            this.textBox.Text = "0";
+            this.textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button1
             // 
@@ -324,6 +323,7 @@ namespace ScientificCalculator1
             this.button25.TabIndex = 1;
             this.button25.Text = "7";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button37_Click);
             // 
             // button26
             // 
@@ -334,6 +334,7 @@ namespace ScientificCalculator1
             this.button26.TabIndex = 1;
             this.button26.Text = "8";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button37_Click);
             // 
             // button27
             // 
@@ -344,6 +345,7 @@ namespace ScientificCalculator1
             this.button27.TabIndex = 1;
             this.button27.Text = "9";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button37_Click);
             // 
             // button28
             // 
@@ -364,6 +366,7 @@ namespace ScientificCalculator1
             this.button29.TabIndex = 1;
             this.button29.Text = "4";
             this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button37_Click);
             // 
             // button30
             // 
@@ -374,6 +377,7 @@ namespace ScientificCalculator1
             this.button30.TabIndex = 1;
             this.button30.Text = "5";
             this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button37_Click);
             // 
             // button31
             // 
@@ -384,6 +388,7 @@ namespace ScientificCalculator1
             this.button31.TabIndex = 1;
             this.button31.Text = "6";
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button37_Click);
             // 
             // button32
             // 
@@ -404,6 +409,7 @@ namespace ScientificCalculator1
             this.button33.TabIndex = 1;
             this.button33.Text = "1";
             this.button33.UseVisualStyleBackColor = false;
+            this.button33.Click += new System.EventHandler(this.button37_Click);
             // 
             // button34
             // 
@@ -414,6 +420,7 @@ namespace ScientificCalculator1
             this.button34.TabIndex = 1;
             this.button34.Text = "2";
             this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button37_Click);
             // 
             // button35
             // 
@@ -424,6 +431,7 @@ namespace ScientificCalculator1
             this.button35.TabIndex = 1;
             this.button35.Text = "3";
             this.button35.UseVisualStyleBackColor = false;
+            this.button35.Click += new System.EventHandler(this.button37_Click);
             // 
             // button36
             // 
@@ -449,12 +457,14 @@ namespace ScientificCalculator1
             // button38
             // 
             this.button38.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button38.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button38.Location = new System.Drawing.Point(672, 369);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(80, 64);
             this.button38.TabIndex = 1;
             this.button38.Text = ".";
             this.button38.UseVisualStyleBackColor = false;
+            this.button38.Click += new System.EventHandler(this.button37_Click);
             // 
             // button39
             // 
@@ -536,8 +546,7 @@ namespace ScientificCalculator1
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Controls.Add(this.textBox);
             this.Name = "Form1";
             this.Text = "Scientific Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -549,7 +558,7 @@ namespace ScientificCalculator1
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

@@ -34,6 +34,21 @@ namespace ScientificCalculator1
 
         private void button37_Click(object sender, EventArgs e)
         {
+            if (textBox.Text == "0")
+                textBox.Clear();
+            Button button = (Button)sender;
+            if(button.Text == ".")
+            {
+                if(!textBox.Text.Contains("."))
+                {
+                    textBox.Text += button.Text;
+                }
+                
+            }
+            else
+            {
+                textBox.Text += button.Text;
+            }
 
         }
     }
